@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 type ProductState = {
   isInStock: boolean;
 };
 
-export class Product extends Component<{}, ProductState> {
+export class Product extends Component<NonNullable<unknown>, ProductState> {
   state: ProductState = {
     isInStock: true,
   };
